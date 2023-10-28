@@ -4,6 +4,7 @@ This git repository hosts a user interface for a chat-app written in [Pure Pytho
 
 ![](docs/preview.png)
 
+## Repository Structure
 ```
 Low-Code-Chat/
 ├── .streamlit/
