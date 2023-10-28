@@ -29,8 +29,6 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 
 ## About
 
-## About
-
 Hey it's Brian,
 
 Check out my social profiles. 
