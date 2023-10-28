@@ -26,3 +26,20 @@ streamlit run https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-cha
 ## Topics 
 Python | Streamlit | Git | Low Code UI
 Template Repository | Streamlit Secrets | Chat interface | LLM
+
+## About
+
+Hey it's Brian,
+
+This is a [Low-Code Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) UI for ChatGPT.
+
+It's written with less than 100 lines of code.
+
+You'll need an OpenAI key to use this app, paste it below.
+
+![Image](docs/bl.png)
+
+[![X](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f43df68f90b4aaad198d76afd3eb074c8040a119/.socials/x-logo.svg)](https://twitter.com/BrianJosephLeko)
+[![Github](https://raw.githubusercontent.com/BrianLesko/BrianLesko/efa936b96cd1c5e6b6c1c7beeb653f99be93af4f/.socials/github-mark.svg)](https://github.com/BrianLesko)
+[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/81a524efec54faf96723bda4a86056a71c3de21b/.socials/linkedin-icon.svg)](https://www.linkedin.com/in/brianlesko/)
+
