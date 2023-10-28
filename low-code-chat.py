@@ -26,13 +26,15 @@ def about():
         col1, col2, = st.columns([1,5], gap="medium")
 
         with col1:
-            st.image('.docs/bl.png')
+            st.image('docs/bl.png')
 
         with col2:
             st.write(""" 
             Hey it's Brian,
                     
-            This is a low code chat interface for the GPT-4 language model.
+            This is a [Low-Code Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) UI for ChatGPT.
+                     
+            It's written with less than 100 lines of code.
                     
             You'll need an OpenAI key to use this app, paste it below.
             """)
