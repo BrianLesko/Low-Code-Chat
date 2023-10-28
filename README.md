@@ -31,7 +31,5 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 
 Hey it's Brian, check out my social profiles. 
 
-https://github.com/BrianLesko/BrianLesko/blob/main/.socials/x-logo-white.svg
-
-<img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/x-logo-white.svg" width="40"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://github.com/BrianLesko"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/efa936b96cd1c5e6b6c1c7beeb653f99be93af4f/.socials/github-mark.svg" width="40"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/81a524efec54faf96723bda4a86056a71c3de21b/.socials/linkedin-icon.svg" width="40"></a>
+<img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/x-logo-white.svg" width="40"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://github.com/BrianLesko"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/efa936b96cd1c5e6b6c1c7beeb653f99be93af4f/.socials/github-mark.svg" width="40"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/github-mark-white.svg" width="40"></a>
 
