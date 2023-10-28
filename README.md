@@ -24,8 +24,10 @@ streamlit run https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-cha
 ```
 
 ## Topics 
+```
 Python | Streamlit | Git | Low Code UI
 Template Repository | Streamlit Secrets | Chat interface | LLM
+```
 
 ## About
 
