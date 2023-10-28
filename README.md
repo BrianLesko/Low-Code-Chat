@@ -9,7 +9,7 @@ This git repository hosts a user interface for a chat-app written in [Pure Pytho
 Low-Code-Chat/
 ├── .streamlit/
 │   ├── config.toml
-│   └── secrets.toml # Make sure to add this to gitignore! Or your personal API key becomes public when pushed. 
+│   └── secrets.toml # Make sure to add this to gitignore
 ├── docs/
 │   └── content.png
 ├── app.py
