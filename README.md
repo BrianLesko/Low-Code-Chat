@@ -32,7 +32,7 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 ## About
 
 Hey it's Brian, check out my social profiles. 
-
+ 
 
 <img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/x-logo-white.svg" width="40"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://github.com/BrianLesko"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/github-mark-white.svg" width="40"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/linkedin-icon-white.svg" width="40"></a>
 
