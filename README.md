@@ -4,7 +4,7 @@ This git repository hosts a user interface for a chat-app written in [Pure Pytho
 
 &nbsp;
 
-<div align="center"><img src="docs/preview.png" width="700"></div>
+<div align="center"><img src="docs/preview.png" width="800"></div>
 ![](docs/preview.png)
 
 &nbsp;
