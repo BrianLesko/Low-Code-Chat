@@ -11,7 +11,7 @@ Low-Code-Chat/
 │   ├── config.toml
 │   └── secrets.toml # Make sure to add this to gitignore! Or your personal API key becomes public when pushed. 
 ├── docs/
-│   └── pictures.PNG
+│   └── content.png
 ├── app.py
 ├── requirements.txt
 └── .gitignore
