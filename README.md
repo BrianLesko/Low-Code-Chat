@@ -4,6 +4,8 @@ This git repository hosts a user interface for a chat-app written in [Pure Pytho
 
 ![](docs/preview.png)
 
+&nbsp;
+
 ## Repository Structure
 ```
 Low-Code-Chat/
@@ -17,17 +19,23 @@ Low-Code-Chat/
 └── .gitignore
 ```
 
+&nbsp;
+
 ## Run this demo locally
 ```
 pip install --upgrade streamlit
 streamlit run https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py
 ```
 
+&nbsp;
+
 ## Topics 
 ```
 Python | Streamlit | Git | Low Code UI
 Template Repository | Streamlit Secrets | Chat interface | LLM
 ```
+
+&nbsp;
 
 ## About
 
