@@ -2,6 +2,8 @@
 # Low-Code-Chat
 This git repository hosts a user interface for a chat-app written in [Pure Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) with less than 50 lines of  code. Connect your OpenAI API for Chat-GPT like chatting. Created for Learning Purposes, this repo has a focus on correct respo structure.
 
+![](docs/preview.png)
+
 ```
 Low-Code-Chat/
 ├── .streamlit/
@@ -13,8 +15,6 @@ Low-Code-Chat/
 ├── requirements.txt
 └── .gitignore
 ```
-
-![](docs/preview.png)
 
 ## Run this demo locally
 ```
