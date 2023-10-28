@@ -29,12 +29,11 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 
 ## About
 
+## About
+
 Hey it's Brian,
 
-This is a [Low-Code Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) UI for ChatGPT.
+Check out my social profiles. 
 
-It's written with less than 100 lines of code.
+<img src="docs/bl.png" width="100"> &nbsp; &nbsp; <a href="https://twitter.com/BrianJosephLeko"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/f43df68f90b4aaad198d76afd3eb074c8040a119/.socials/x-logo.svg" width="50"></a> &nbsp; &nbsp; <a href="https://github.com/BrianLesko"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/efa936b96cd1c5e6b6c1c7beeb653f99be93af4f/.socials/github-mark.svg" width="50"></a> &nbsp; &nbsp; <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/81a524efec54faf96723bda4a86056a71c3de21b/.socials/linkedin-icon.svg" width="50"></a>
 
-You'll need an OpenAI key to use this app, paste it below.
-
-<img src="docs/bl.png" width="100"> <a href="https://twitter.com/BrianJosephLeko"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/f43df68f90b4aaad198d76afd3eb074c8040a119/.socials/x-logo.svg" width="50"></a> <a href="https://github.com/BrianLesko"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/efa936b96cd1c5e6b6c1c7beeb653f99be93af4f/.socials/github-mark.svg" width="50"></a> <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://raw.githubusercontent.com/BrianLesko/BrianLesko/81a524efec54faf96723bda4a86056a71c3de21b/.socials/linkedin-icon.svg" width="50"></a>
