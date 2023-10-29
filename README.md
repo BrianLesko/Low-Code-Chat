@@ -47,7 +47,10 @@ Hey it's Brian, check out my social profiles.
 
 <div align="center">
 
-<img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/x-logo-white.svg" width="30"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://github.com/BrianLesko"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/github-mark-white.svg" width="30"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/linkedin-icon-white.svg" width="30"></a>
+<a href="https://twitter.com/BrianJosephLeko"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/x-logo-white.svg" width="30" alt="X Logo"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://github.com/BrianLesko"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/github-mark-white.svg" width="30" alt="GitHub"></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.linkedin.com/in/brianlesko/"><img src="https://github.com/BrianLesko/BrianLesko/blob/main/.socials/linkedin-icon-white.svg" width="30" alt="LinkedIn"></a>
+
+</div>
+
 
 &nbsp;
 
