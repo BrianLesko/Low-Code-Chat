@@ -58,9 +58,7 @@ def about():
 import streamlit as st
 import openai
 
-
 with st.sidebar:
-
     about()
     st.write('  ') 
     st.markdown("""---""")
