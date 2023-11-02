@@ -37,8 +37,6 @@ Python | Streamlit | Git | Low Code UI
 Template Repository | Streamlit Secrets | Chat interface | LLM
 ```
 
-<div align="center">
-  </div>
 ```
 ╭━━╮╭━━━┳━━┳━━━┳━╮╱╭╮    ╭╮╱╱╭━━━┳━━━┳╮╭━┳━━━╮
 ┃╭╮┃┃╭━╮┣┫┣┫╭━╮┃┃╰╮┃┃    ┃┃╱╱┃╭━━┫╭━╮┃┃┃╭┫╭━╮┃
