@@ -39,7 +39,6 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 &nbsp;
 
 &nbsp;
-<hr>
 &nbsp;
 
 ```
@@ -52,7 +51,6 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 
 ```
 &nbsp;
-<hr>
 &nbsp;
 
 &nbsp;
