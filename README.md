@@ -38,6 +38,9 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 ```
 &nbsp;
 
+<div align="center">
+
+
 ```
 ╭━━╮╭━━━┳━━┳━━━┳━╮╱╭╮    ╭╮╱╱╭━━━┳━━━┳╮╭━┳━━━╮
 ┃╭╮┃┃╭━╮┣┫┣┫╭━╮┃┃╰╮┃┃    ┃┃╱╱┃╭━━┫╭━╮┃┃┃╭┫╭━╮┃
@@ -47,6 +50,8 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 ╰━━━┻╯╰━┻━━┻╯╱╰┻╯╱╰━╯    ╰━━━┻━━━┻━━━┻╯╰━┻━━━╯
 
 ```
+
+</div>
 
 &nbsp;
 
