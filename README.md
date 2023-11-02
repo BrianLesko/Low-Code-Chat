@@ -55,7 +55,7 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 
 &nbsp;
 
-## About
+<hr>
 
 &nbsp;
 
