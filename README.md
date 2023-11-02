@@ -46,6 +46,7 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 ╰━━━┻╯╰━┻━━┻╯╱╰┻╯╱╰━╯    ╰━━━┻━━━┻━━━┻╯╰━┻━━━╯
 
 ```
+<hr>
 
 &nbsp;
 
