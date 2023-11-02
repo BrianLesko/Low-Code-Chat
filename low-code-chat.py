@@ -41,16 +41,17 @@ def about():
 
         col1, col2, col3, col4, col5, col6 = st.columns([1.1,1,1,1,1,1.5], gap="medium")
         with col2:
-            "[![X](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f43df68f90b4aaad198d76afd3eb074c8040a119/.socials/x-logo.svg)](https://twitter.com/BrianJosephLeko)"
+            "[![X](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/x-logo-blue.png)](https://twitter.com/BrianJosephLeko)"
         with col3:
-            "[![Github](https://raw.githubusercontent.com/BrianLesko/BrianLesko/efa936b96cd1c5e6b6c1c7beeb653f99be93af4f/.socials/github-mark.svg)](https://github.com/BrianLesko)"
+            "[![Github](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/github-mark-blue.png)](https://github.com/BrianLesko)"
         with col4:
-            "[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/81a524efec54faf96723bda4a86056a71c3de21b/.socials/linkedin-icon.svg)](https://www.linkedin.com/in/brianlesko/)"
+            "[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/linkedin-icon-blue.png)](https://www.linkedin.com/in/brianlesko/)"
         with col5:
             "."
             #"[![Blog](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/coffee.png)](https://visualstudycode.com)"
         with col6:
             "."
+            # https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/yt-logo-blue.png
 
 ##################################################
 # Streamlit App
