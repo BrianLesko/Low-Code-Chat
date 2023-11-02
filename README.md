@@ -41,7 +41,7 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 
 ## About
 
-Hey it's Brian, check out my social profiles. 
+follow all of these or i will kick you
 
 &nbsp;
 
