@@ -36,8 +36,11 @@ streamlit run https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-cha
 Python | Streamlit | Git | Low Code UI
 Template Repository | Streamlit Secrets | Chat interface | LLM
 ```
+&nbsp;
 
+&nbsp;
 <hr>
+&nbsp;
 
 ```
 ╭━━╮╭━━━┳━━┳━━━┳━╮╱╭╮    ╭╮╱╱╭━━━┳━━━┳╮╭━┳━━━╮
@@ -48,7 +51,9 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 ╰━━━┻╯╰━┻━━┻╯╱╰┻╯╱╰━╯    ╰━━━┻━━━┻━━━┻╯╰━┻━━━╯
 
 ```
+&nbsp;
 <hr>
+&nbsp;
 
 &nbsp;
 
