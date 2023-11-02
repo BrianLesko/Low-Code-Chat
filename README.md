@@ -50,13 +50,10 @@ Template Repository | Streamlit Secrets | Chat interface | LLM
 ╰━━━┻╯╰━┻━━┻╯╱╰┻╯╱╰━╯    ╰━━━┻━━━┻━━━┻╯╰━┻━━━╯
 
 ```
-&nbsp;
-&nbsp;
 
 &nbsp;
-
-<hr>
-
+&nbsp;
+&nbsp;
 &nbsp;
 
 <div align="center">
