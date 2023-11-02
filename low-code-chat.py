@@ -41,17 +41,22 @@ def about():
 
         col1, col2, col3, col4, col5, col6 = st.columns([1.1,1,1,1,1,1.5], gap="medium")
         with col2:
-            "[![X](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/x-logo-blue.png)](https://twitter.com/BrianJosephLeko)"
+            # TWITTER
+            "[![X](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/x-logo-blue.svg)](https://twitter.com/BrianJosephLeko)"
         with col3:
-            "[![Github](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/github-mark-blue.png)](https://github.com/BrianLesko)"
+            # GITHUB
+            "[![Github](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/github-mark-blue.svg)](https://github.com/BrianLesko)"
         with col4:
-            "[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/linkedin-icon-blue.png)](https://www.linkedin.com/in/brianlesko/)"
+            # LINKEDIN
+            "[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/linkedin-icon-blue.svg)](https://www.linkedin.com/in/brianlesko/)"
         with col5:
+            # YOUTUBE
             "."
-            #"[![Blog](https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/coffee.png)](https://visualstudycode.com)"
+            #"[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/yt-logo-blue.svg)](https://www.linkedin.com/in/brianlesko/)" 
         with col6:
+            # BLOG Visual Study Code
             "."
-            # https://raw.githubusercontent.com/BrianLesko/BrianLesko/main/.socials/yt-logo-blue.png
+            #"[![VSC]()](https://www.visualstudycode.com/)"
 
 ##################################################
 # Streamlit App
