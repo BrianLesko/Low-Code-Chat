@@ -61,14 +61,11 @@ def about():
 ##################################################
 # Streamlit App
 
-#import os
 import streamlit as st
 import openai
 from api_key import openai_api_key
 
 openai_api_key_file = openai_api_key
-
-#os.environ['OPENAI_API_KEY'] = openai_api_key
 
 with st.sidebar:
     about()
