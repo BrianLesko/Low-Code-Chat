@@ -8,8 +8,8 @@
 '''
 your-LOCAL-repository/
 ├── .streamlit/
-│   ├── config.toml
-│   └── secrets.toml # Make sure to gitignore this!
+│   └── config.toml
+├── api_key.py # must be added to .gitignore
 ├── your_app.py
 ├── requirements.txt
 ├── .gitignore
@@ -61,8 +61,14 @@ def about():
 ##################################################
 # Streamlit App
 
+#import os
 import streamlit as st
 import openai
+from api_key import openai_api_key
+
+openai_api_key_file = openai_api_key
+
+#os.environ['OPENAI_API_KEY'] = openai_api_key
 
 with st.sidebar:
     about()
@@ -72,10 +78,6 @@ with st.sidebar:
     col1, col2 = st.columns([1,5], gap="medium")
     with col2:
         "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-
-# use the openai api key from the TOML file in the original directory (also in git ignore) if it is available
-if st.secrets["openai_api_key"]:
-    openai_api_key = st.secrets["openai_api_key"]
 
 # The app will be used as a template for further chat interfaces for low code UI development
 st.title("Low Code Chat Interface") 
@@ -89,11 +91,13 @@ for msg in st.session_state.messages:
 if prompt := st.chat_input("Write a message"):
 
     # Get an open ai key, the company behind the first popular LLM, GPT-3
-    if not openai_api_key:
+    if not openai_api_key and not openai_api_key_file:
         st.info("Please add your OpenAI API key to continue.")
         st.stop()
 
     openai.api_key = openai_api_key
+    if openai_api_key_file:
+        openai.api_key = openai_api_key_file
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
     response = openai.ChatCompletion.create(model="gpt-4", messages=st.session_state.messages)
