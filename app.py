@@ -4,17 +4,17 @@
 # In this Low code UI, we interact with a large language transformer model (LLM) through an Application Programming Interface (API).
 # Practice Coding for concise software development for engineering in the fields of robotics, AI, and automation. 
 
+from api_key import openai_api_key
+
 # When running locally, the file directory is structured as follows:
-'''
-your-LOCAL-repository/
-├── .streamlit/
-│   └── config.toml
-├── api_key.py # must be added to .gitignore
-├── your_app.py
-├── requirements.txt
-├── .gitignore
-└── bl.png
-'''
+#   your-LOCAL-repository/
+#   ├── .streamlit/
+#   │   └── config.toml
+#   ├── api_key.py # must be added to .gitignore
+#   ├── your_app.py
+#   ├── requirements.txt
+#   ├── .gitignore
+#   └── bl.png
 
 ##################################################
 # About the author: Brian Lesko is a robotics engineer and recent graduate
