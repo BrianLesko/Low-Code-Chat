@@ -4,103 +4,49 @@
 # In this Low code UI, we interact with a large language transformer model (LLM) through an Application Programming Interface (API).
 # Practice Coding for concise software development for engineering in the fields of robotics, AI, and automation. 
 
-from api_key import openai_api_key
-
-# When running locally, the file directory is structured as follows:
-#   your-LOCAL-repository/
-#   ├── .streamlit/
-#   │   └── config.toml
-#   ├── api_key.py # must be added to .gitignore
-#   ├── your_app.py
-#   ├── requirements.txt
-#   ├── .gitignore
-#   └── bl.png
-
-##################################################
-# About the author: Brian Lesko is a robotics engineer and recent graduate
-def about():
-    with st.sidebar:
-
-        st.subheader("About")
-        st.write('  ') 
-        col1, col2, = st.columns([1,5], gap="medium")
-
-        with col1:
-            st.image('docs/bl.png')
-
-        with col2:
-            st.write(""" 
-            Hey it's Brian,
-                    
-            This is a [Low-Code Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) UI for ChatGPT.
-                     
-            It's written with less than 100 lines of code.
-                    
-            You'll need an OpenAI key to use this app, paste it below.
-            """)
-
-        col1, col2, col3, col4, col5, col6 = st.columns([1.1,1,1,1,1,1.5], gap="medium")
-        with col2:
-            # TWITTER
-            "[![X](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/x-logo-blue.svg)](https://twitter.com/BrianJosephLeko)"
-        with col3:
-            # GITHUB
-            "[![Github](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/github-mark-blue.svg)](https://github.com/BrianLesko)"
-        with col4:
-            # LINKEDIN
-            "[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/linkedin-icon-blue.svg)](https://www.linkedin.com/in/brianlesko/)"
-        with col5:
-            # YOUTUBE
-            "."
-            #"[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/yt-logo-blue.svg)](https://www.linkedin.com/in/brianlesko/)" 
-        with col6:
-            # BLOG Visual Study Code
-            "."
-            #"[![VSC]()](https://www.visualstudycode.com/)"
-
-##################################################
-# Streamlit App
+def write_stream(stream):
+    text = ""
+    for chunk in stream:
+        content = chunk.choices[0].delta.content
+        if content is not None: 
+            text += content
+            with Stream:
+                st.markdown(text)
+    return text
 
 import streamlit as st
-import openai
-from api_key import openai_api_key
+from aitools import AIClient
 
-openai_api_key_file = openai_api_key
+if "myclient" not in st.session_state:
+    st.session_state.myclient = AIClient('xai')
 
-with st.sidebar:
-    about()
-    st.write('  ') 
-    st.markdown("""---""")
-    openai_api_key = st.text_input("# OpenAI API Key", key="chatbot_api_key", type="password")
-    col1, col2 = st.columns([1,5], gap="medium")
-    with col2:
-        "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
+if st.session_state.myclient.api_key is None or st.session_state.myclient.api_key == "":
+    Message = st.empty()
+    Message.warning("Please add your API key to continue.")
+    key = st.text_input("API Key")
+    if key:
+        st.session_state.myclient.reset_api_key(key)
+        Message.info("API Key set successfully, you can now continue.")
+    else:
+        st.stop()
 
-# The app will be used as a template for further chat interfaces for low code UI development
 st.title("Low Code Chat Interface") 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+    st.session_state["messages"] = []
 
 # Display all the historical messages
 for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
+    if msg["role"] == "user":
+        st.markdown(f"### {msg['content']}")
+    else:
+        st.markdown(msg["content"])
+
+User = st.empty()
+Stream = st.empty()
 
 if prompt := st.chat_input("Write a message"):
-
-    # Get an open ai key, the company behind the first popular LLM, GPT-3
-    if not openai_api_key and not openai_api_key_file:
-        st.info("Please add your OpenAI API key to continue.")
-        st.stop()
-
-    openai.api_key = openai_api_key
-    if openai_api_key_file:
-        openai.api_key = openai_api_key_file
     st.session_state.messages.append({"role": "user", "content": prompt})
-    st.chat_message("user").write(prompt)
-    response = openai.ChatCompletion.create(model="gpt-4", messages=st.session_state.messages)
-    msg = response.choices[0].message
-    st.session_state.messages.append(msg)
-    st.chat_message("assistant").write(msg.content)
-
-##################################################
-# Related topics: OpenAI Generative Transformers, AI, Streamlit, Chatbot, Python, Low Code, UI, Low code UI, Large Language model
+    User.markdown('### ' + prompt)
+    stream = st.session_state.myclient.get_stream(st.session_state.messages)
+    text = write_stream(stream)
+    st.session_state.messages.append({"role": "assistant", "content": text})
