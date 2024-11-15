@@ -1,5 +1,10 @@
 from openai import OpenAI
-from keys import xai_api_key, openai_api_key
+try:
+  from keys import xai_api_key, openai_api_key
+except:
+  xai_api_key = ''
+  openai_api_key = ''
+  print("No API key found in keys.py")
 import os
 
 class AIClient:

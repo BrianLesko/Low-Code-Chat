@@ -18,7 +18,11 @@ import streamlit as st
 from aitools import AIClient
 
 if "myclient" not in st.session_state:
-    st.session_state.myclient = AIClient('xai')
+    ai_choice = st.selectbox("Select AI Company", ['',"openai", "xai"])
+    if ai_choice != "":
+        st.session_state.myclient = AIClient(ai_choice)
+    else:
+        st.stop()
 
 if st.session_state.myclient.api_key is None or st.session_state.myclient.api_key == "":
     Message = st.empty()
