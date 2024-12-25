@@ -1,6 +1,6 @@
 
 # Low Code Chat UI
-This git repository hosts a user interface for a chat-app written in [Pure Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) with less than 50 lines of  code. Connect your OpenAI API or XAI API for Chat-GPT like chatting. Created for Learning Purposes.
+This git repository hosts a user interface for a chat-app written in [Pure Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py) with less than 100 lines of code. XAI vision model supported. Connect your OpenAI API or XAI API for Chat-GPT like chatting. Created for Learning Purposes.
 
 &nbsp;
 
