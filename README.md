@@ -14,6 +14,9 @@ Low-Code-Chat/
 ├── .streamlit/
 │   └── config.toml
 ├── app.py
+├── start.sh
+├── keys.json
+│   └── {"xai_api_key": "xghsipoksml...", "openai_api_key": "xfughsipoksml..." }
 ├── requirements.txt
 └── .gitignore
 ```
