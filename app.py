@@ -34,17 +34,17 @@ if st.session_state.myai.api_key is None:
     Message.html(base64.b64decode(msg).decode("utf-8"))
     st.stop()
 
-st.session_state.myai._set_environment_variables()
-st.session_state.myai._get_client()
+st.session_state.myai.setup()
 
 st.markdown('<h1 style="text-align: center; padding-top: 60px;">My llm</h1>', unsafe_allow_html=True)
 Upload = st.empty()
 Chat = st.empty()
-file = Upload.file_uploader("", accept_multiple_files=False)
-if file: st.session_state.file = st.session_state.myai._reduce_image_size(file)
+
 if "messages" not in st.session_state:
     st.session_state["messages"] = []
 
+file = Upload.file_uploader("", accept_multiple_files=False)
+if file: st.session_state.file = st.session_state.myai._reduce_image_size(file)
 if "file" in st.session_state:
     b64 = st.session_state.file
     st.html(f"""
@@ -54,9 +54,14 @@ if "file" in st.session_state:
     """)
 
 do_html = st.sidebar.checkbox("Use HTML", value=False)
+recursion = st.sidebar.checkbox("Recursion", value=False)
+if recursion:
+    recursion_prompt = st.sidebar.text_input("Recursion Prompt", value="Please be certain that your answer is correct, truthful, and terse. Please refine any ambiguity in your response and use elegant language.")
 
 # Display all the historical messages
 for msg in st.session_state.messages:
+    if msg["role"] == "system":
+        continue
     if isinstance(msg["content"], str): # This is a text message
         if msg["role"] == "user":
             st.markdown(f"<h2 style='padding-top: 40px;'>{msg['content']}</h2>", unsafe_allow_html=True)
@@ -64,7 +69,6 @@ for msg in st.session_state.messages:
             st.html(f'''<p style="padding: 0; margin: 0;"> {msg["content"]} </p>''')
     else: # This is an image message
         url = next(item["image_url"]["url"] for item in msg["content"] if item["type"] == "image_url")
-        if False: st.html(f""" <div style="text-align: center; padding-top: 40px; padding-bottom: 20px;"> <img src="{url}" alt="Base64 Image" style="max-width: 100%; height: auto;"> </div> """)
         st.markdown(f"<h2 style='padding-top: 40px;'>{msg['content'][1]['text']}</h2>", unsafe_allow_html=True)
 
 User = st.empty()
@@ -72,6 +76,7 @@ Stream = st.empty()
 
 prompt = st.chat_input("Write a message")
 
+# If there is a prompt and an image
 if prompt and "file" in st.session_state:
     b64 = st.session_state.file
     st.session_state.messages.append({
@@ -91,10 +96,18 @@ if prompt and "file" in st.session_state:
     st.markdown(text)
     st.session_state.messages.append({"role": "assistant", "content": text})
     st.session_state.pop("file", None)
-elif prompt:    # If there is only a prompt
+
+# If there is only a prompt
+elif prompt:    
     Upload.empty()
     st.session_state.messages.append({"role": "user", "content": prompt})
     User.markdown(f"<h2 style='padding-top: 40px;'>{prompt}</h2>", unsafe_allow_html=True)
+    stream = st.session_state.myai.get_stream(st.session_state.messages)
+    text = write_stream(stream)
+    st.session_state.messages.append({"role": "assistant", "content": text})
+
+if recursion and prompt:
+    st.session_state.messages.append({"role": "system", "content": recursion_prompt})
     stream = st.session_state.myai.get_stream(st.session_state.messages)
     text = write_stream(stream)
     st.session_state.messages.append({"role": "assistant", "content": text})

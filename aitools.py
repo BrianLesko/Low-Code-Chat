@@ -27,6 +27,10 @@ class AIClient:
     #if api_key: # If an API key is provided, use it instead of what is defined in _get_environment_variables
     #  os.environ['API_KEY'] = self.api_key
 
+  def setup(self):
+    self._set_environment_variables()
+    self._get_client()
+
   def _get_client(self):
     self.client = OpenAI(api_key=self.api_key,base_url=self.base_url)
 
