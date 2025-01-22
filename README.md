@@ -25,8 +25,10 @@ Low-Code-Chat/
 
 ## Run this demo locally
 ```
-pip install --upgrade streamlit
-streamlit run https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py
+python3 -m venv myenv
+source myenv/bin/activate
+pip install streamlit
+streamlit app.py
 ```
 
 &nbsp;
